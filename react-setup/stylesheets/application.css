@@ -1,0 +1,12 @@
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vw;
+  font-size: 100px;
+  color: blue;
+}
+
+.numbers {
+  border: 1px solid black;
+}

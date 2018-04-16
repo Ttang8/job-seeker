@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>dom practical</title>
+  </head>
+  <body>
+    <ul id="listToDestroy">
+      <li><a href="#">first item</a></li>
+      <li><a href="#">second item</a></li>
+      <li><a href="#">third item</a></li>
+      <li><a href="#">fourth item</a></li>
+      <li><a href="#">fifth item</a></li>
+    </ul>
+
+    <script>
+      document.getElementById('listToDestroy').addEventListener('click', e => {
+        e.preventDefault();
+        let el = e.target.parentNode;
+        el.innerHTML = "";
+        // el.parentNode.removeChild(el);
+      });
+    </script>
+  </body>
+</html>
